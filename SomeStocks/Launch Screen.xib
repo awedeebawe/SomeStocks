@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SomeStocks-launchImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mhi-hl-8li">
+                    <rect key="frame" x="112" y="64" width="256" height="256"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="256" id="MfD-5u-eqB"/>
+                        <constraint firstAttribute="height" constant="256" id="e9E-3g-Ihj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some Stocks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Al-RC-xUn">
+                    <rect key="frame" x="8" y="378" width="464" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="KZx-QU-Bv7"/>
+                        <constraint firstAttribute="width" constant="464" id="RDm-RI-gCr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="47"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.44313725490196076" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Mhi-hl-8li" secondAttribute="centerX" id="6bB-pd-zJV"/>
+                <constraint firstAttribute="bottom" secondItem="7Al-RC-xUn" secondAttribute="bottom" constant="64" id="GN0-cC-orL"/>
+                <constraint firstItem="7Al-RC-xUn" firstAttribute="centerX" secondItem="Mhi-hl-8li" secondAttribute="centerX" id="RPC-Ik-xvz"/>
+                <constraint firstItem="Mhi-hl-8li" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="iCp-jg-zDM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="404" y="445"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SomeStocks-launchImage.png" width="512" height="512"/>
+    </resources>
+</document>
